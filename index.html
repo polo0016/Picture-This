@@ -16,104 +16,70 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
 
-  <!--Landscape 320px viewport--> 
-  <img 
-  srcset="images/museum320.png 320w,
-  images/museum640.png 640w,
-  images/museum960.png 960w"
+  
+  <picture>
 
-  sizes="(max-width: 320px) 320px,
-        (max-width: 640px) 640px,
-        (max-width: 960px) 960px"
+    <!--Landscape 320px viewport--> 
+    <source srcset="images/museum320.png,
+     images/museum640.png 2x,
+     images/museum960.png 3x"
 
-  src="images/museum320.png"
+     media="(max-width: 320px)"/>
+  
+    <!--Landscape 480px viewport--> 
+   
+    <source srcset="images/museum480.png,
+     images/museum960.png 2x,
+     images/museum1440.png 3x"
 
-  alt="picture of a museum">
+     media="(max-width: 480px)"/>
 
-  <!--Landscape 480px viewport--> 
-  <img 
-  srcset="images/museum480.png 480w,
-  images/museum960.png 960w,
-  images/museum1440.png 1440w"
+    <!--Landscape 720px viewport--> 
+     
+    <source srcset="images/museum720.png,
+     images/museum1440.png 2x,
+     images/museum2160.png 3x"
 
-  sizes="(max-width: 480px) 480px,
-        (max-width: 960px) 960px,
-        (max-width: 1440px) 1440px"
+     media="(max-width: 720px)"/>
 
-  src="images/museum480.png"
+    <!--Landscape 960px viewport--> 
+    
+    <source srcset="images/museum960.png,
+      images/museum1920.png 2x,
+      images/museum2880.png 3x"
 
-  alt="picture of a museum">
+      media="(max-width: 960px)"/>
 
- <!--Landscape 720px viewport--> 
- <img 
- srcset="images/museum720.png 720w,
- images/museum1440.png 1440w,
- images/museum2160.png 2160w"
+    <!--Square 1600px viewport--> 
+    
+      <source srcset="images/square800.png,
+       images/square1600.png 2x,
+       images/square2400.png 3x"
 
- sizes="(max-width: 720px) 720px,
-       (max-width: 1440px) 1440px,
-       (max-width: 2160px) 2160px"
+       media="(min-width: 1600px)"/>
 
- src="images/museum720.png"
+    <!--Square 1280px viewport--> 
+       
+      <source srcset="images/square480.png,
+      images/square1280.png 2x,
+      images/square1920.png 3x"
 
- alt="picture of a museum">
+      media="(min-width: 1280px)"/>
 
-  <!--Landscape 960px viewport--> 
-  <img 
-  srcset="images/museum960.png 960w,
-  images/museum1920.png 1920w,
-  images/museum2880.png 2880w"
+    <!--Square 960px viewport--> 
+    
+    <source srcset="images/square480.png,
+      images/square960.png 2x,
+      images/square1440.png 3x"
 
-  sizes="(max-width: 960px) 960px,
-        (max-width: 1920px) 1920px,
-        (max-width: 2880px) 2880px"
+      media="(min-width: 960px)">
+      
+    <img class="orig-image" 
+      src="images/museum960.png"
+      alt="picture of a museum">
 
-  src="images/museum960.png"
-
-  alt="picture of a museum">
-
-  <!--Square 960px viewport--> 
-  <img 
-  srcset="images/square480.png 960w,
-  images/square960.png 1920w,
-  images/square1440.png 2880w"
-
-  sizes="(min-width: 960px) 960px,
-        (min-width: 1920px) 1920px,
-        (min-width: 2880px) 2880px"
-
-  src="images/square960.png"
-
-  alt="picture of a museum">
+  </picture>
  
-  <!--Square 1280px viewport--> 
-  <img 
-  srcset="images/square480.png 1280w,
-  images/square1280.png 2560w,
-  images/square1920.png 3840w"
-
-  sizes="(min-width: 1280px) 1280px,
-        (min-width: 2560px) 2560px,
-        (min-width: 3840px) 3840px"
-
-  src="images/square1280.png"
-
-  alt="picture of a museum">
-  
-  <!--Square 1600px viewport--> 
-  <img 
-  srcset="images/square800.png 1600w,
-  images/square1600.png 3200w,
-  images/square2400.png 4800w"
-
-  sizes="(min-width: 1600px) 1600px,
-        (min-width: 3200px) 3200px,
-        (min-width: 4800px) 4800px"
-
-  src="images/square1600.png"
-
-  alt="picture of a museum">
-  
 </header>
 </body>
 
